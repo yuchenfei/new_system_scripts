@@ -19,7 +19,7 @@
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/yuchenfei/new_system_scripts/blob/main/install_base.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/yuchenfei/new_system_scripts/main/install_base.ps1'))
 ```
 
 ### 手动配置
