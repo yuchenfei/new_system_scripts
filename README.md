@@ -1,6 +1,6 @@
 # new_system_scripts
 
-安装软件依靠 `winget` 命令，较新系统已自带。
+安装软件依靠 `winget` 命令，即“应用安装程序”，较新系统已自带，需要到商店更新一下。
 
 ## 基础脚本
 
@@ -15,10 +15,15 @@
 
 ### 执行脚本
 
-在终端（管理员）中运行
+修改执行权限
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+先在终端（管理员）中运行，`scoop` 需要非管理员终端，再在普通终端运行一遍即可。
+
+```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/yuchenfei/new_system_scripts/main/install_base.ps1'))
 ```
 
